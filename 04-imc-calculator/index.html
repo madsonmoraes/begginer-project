@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+
+    <!-- Importando fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importando ícones do Google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=start"
+    />
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container principal -->
+    <div class="container">
+      <!-- Cabeçalho do aplicativo -->
+      <header class="text-header">
+        <h2>Calculadora de IMC</h2>
+      </header>
+
+      <!-- Seção de entrada de dados -->
+      <div class="inputContent">
+        <!-- Campo de entrada para o Nome -->
+        <label for="inputName">Nome</label>
+        <input
+          class="inputAll"
+          type="text"
+          id="inputName"
+          placeholder="Digite seu nome!"
+        />
+
+        <!-- Campo de entrada para o Peso -->
+        <label for="inputPeso">Peso (kg)</label>
+        <input
+          class="inputAll"
+          type="number"
+          id="inputPeso"
+          placeholder="Digite seu peso!"
+        />
+
+        <!-- Campo de entrada para a Altura -->
+        <label for="inputAltura">Altura (m)</label>
+        <input
+          class="inputAll"
+          type="number"
+          id="inputAltura"
+          placeholder="Digite sua altura!"
+        />
+
+        <!-- Botão para calcular o IMC -->
+        <button id="calculateIMC">
+          Calcular <span class="material-symbols-outlined"> start </span>
+        </button>
+
+        <!-- Seção que exibe o resultado do IMC -->
+        <div class="displayContent" id="displayContent">
+          <h2 id="resultText">Seu IMC é: --</h2>
+          <p id="resultMessage">Insira seus dados e clique em calcular.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importando o script JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>

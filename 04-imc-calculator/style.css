@@ -1,0 +1,121 @@
+/* Reset padrão: Remove margens e paddings padrão do navegador */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Define a fonte para todo o site */
+}
+
+/* Estiliza o corpo da página */
+body {
+  display: flex; /* Ativa o flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define altura total da tela */
+  background: linear-gradient(
+    135deg,
+    #8e44ad,
+    #3498db
+  ); /* Fundo com gradiente de cores */
+  color: white; /* Cor do texto */
+}
+
+/* Estiliza a caixa principal */
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Fundo com leve transparência */
+  backdrop-filter: blur(10px); /* Efeito de vidro (blur no fundo) */
+  width: 350px; /* Largura da caixa */
+  padding: 25px; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar efeito 3D */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Agrupa os inputs */
+.inputContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Organiza os inputs em coluna */
+  gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Estiliza os labels (títulos dos campos) */
+.inputContent label {
+  font-weight: bold; /* Texto em negrito */
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Estiliza os inputs */
+.inputContent input {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Borda com leve transparência */
+  border-radius: 6px; /* Borda arredondada */
+  background: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+  color: #fff; /* Texto branco */
+  font-size: 16px;
+  outline: none; /* Remove a borda azul padrão ao focar */
+  transition: 0.3s; /* Adiciona uma animação suave */
+}
+
+/* Estiliza o placeholder dentro do input */
+.inputContent input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Deixa o placeholder mais visível */
+}
+
+/* Efeito ao focar no input */
+.inputContent input:focus {
+  border-color: #f1c40f; /* Muda a cor da borda */
+  transform: scale(1.05); /* Aumenta levemente o tamanho do input */
+}
+
+/* Estiliza o botão */
+button {
+  display: flex; /* Torna o botão um flex container */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  gap: 8px; /* Espaçamento entre o texto e o ícone */
+  padding: 10px 15px; /* Ajusta o espaçamento interno */
+  font-size: 16px; /* Ajusta o tamanho da fonte */
+  border: none;
+  background-color: #f1c40f; /* Azul chamativo */
+  color: white; /* Texto branco */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Ajustando o ícone dentro do botão */
+.material-symbols-outlined {
+  font-size: 20px; /* Ajusta o tamanho do ícone */
+  vertical-align: middle; /* Mantém o alinhamento correto */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+  background: #ffeb3b; /* Altera a cor ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o tamanho do botão */
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+  transform: scale(0.98); /* Reduz levemente o tamanho ao clicar */
+}
+
+/* Estiliza a caixa onde aparece o resultado do IMC */
+.displayCalculator {
+  display: none; /* Oculta a caixa inicialmente */
+  background: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
+  color: white; /* Cor do texto */
+  margin-top: 20px; /* Distância do botão */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  width: 100%; /* Ocupa toda a largura disponível */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
