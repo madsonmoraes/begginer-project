@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-color: #2c2c2c;
+}
+
+/* Estilização do Footer */
+footer {
+  width: 100%;
+  background-color: #2c2c2c; /* Cor de fundo escura */
+  color: #ffffff; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 0; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  position: relative; /* Garante que fique na parte inferior */
+}
+
+/*AJUSTE DO HEADER*/
+
+.headerName {
+  color: #2c2c2c;
+  text-align: center;
+  background-color: #ffd700;
+}
+
+/* Ajuste dos filmes */
+.headerFilmes {
+  margin-top: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Container principal dos filmes */
+.container-filmes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* Container interno que segura as imagens */
+.contentFilms {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha */
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+}
+
+/* Estilização das imagens */
+.contentFilms img {
+  width: 200px; /* Largura padrão para cada filme */
+  height: 300px; /* Altura fixa */
+  object-fit: cover; /* Garante que a imagem não distorça */
+  border-radius: 10px; /* Deixa as imagens com bordas arredondadas */
+}
+
+/* Ajuste da seção de séries */
+.container-series {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* Container interno das séries */
+.contentSeries {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha */
+  justify-content: center;
+  gap: 20px; /* Espaço entre as imagens */
+}
+
+/* Estilização das imagens das séries */
+.contentSeries img {
+  width: 200px; /* Largura padrão para cada filme */
+  height: 300px; /* Altura fixa */
+  object-fit: cover; /* Mantém a proporção e corta o excesso */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Ajuste da seção de documentários */
+.container-documentarios {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* Container interno dos documentários */
+.contentDocumentarios {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha */
+  justify-content: center;
+  gap: 20px; /* Espaço entre as imagens */
+  margin-bottom: 50px;
+}
+
+/* Estilização das imagens dos documentários */
+.contentDocumentarios img {
+  width: 200px; /* Largura padrão */
+  height: 300px; /* Altura fixa */
+  object-fit: cover; /* Mantém a proporção e corta o excesso */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/*AJUSTE DO MENU e INPUT*/
+.navBarMain {
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 48px;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+.globalMenuMain {
+  display: flex; /* Torna as divs flexíveis */
+  justify-content: space-between; /* Aplica o espaço entre os elementos */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding-top: 6px;
+}
+
+ul {
+  display: flex; /* Torna os itens da lista em uma linha (horizontal) */
+  list-style: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding */
+  margin: 0; /* Garante que a lista não tenha margem */
+  gap: 20px; /* Espaço de 20px entre os itens da lista */
+}
+
+li {
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+li:hover {
+  color: #2c2c2c;
+  background-color: #ffd700;
+}
+
+/* Estilização do input de pesquisa */
+.inputSearch input {
+  height: 35px; /* Aumentando a altura para um visual mais equilibrado */
+  width: 250px; /* Aumentando a largura para mais espaço */
+  outline: none; /* Remove a borda ao clicar */
+  padding-left: 15px; /* Espaçamento à esquerda para o texto */
+  margin: 0; /* Remove qualquer margem externa */
+  border-radius: 20px; /* Borda arredondada */
+  font-size: 14px; /* Tamanho de fonte ajustado para melhor legibilidade */
+  border: 2px solid #6f00ff; /* Cor da borda do input */
+  transition: border-color 0.3s ease-in-out; /* Transição suave para a borda */
+}
+
+/* Foco no input */
+.inputSearch input:focus {
+  border-color: #ffd700; /* Cor dourada para quando o input está em foco */
+}
+
+/* Estilização do botão de pesquisa */
+.inputSearch button {
+  height: 35px; /* Mesma altura do input para alinhamento */
+  padding: 0 20px; /* Espaçamento horizontal */
+  background-color: #6f00ff; /* Cor roxa para o botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda */
+  border-radius: 20px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para pointer para indicar ação */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão */
+.inputSearch button:hover {
+  background-color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+
+/* Efeito de focus para o botão */
+.inputSearch button:focus {
+  outline: none; /* Remove o contorno do botão ao focar */
+}
+
+/* AJUSTE DO CARROUSEL*/
+
+.carousel-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+/* Ajuste das imagens de filmes, séries e documentários */
+.contentFilms img,
+.contentSeries img,
+.contentDocumentarios img {
+  width: 200px; /* Largura fixa */
+  height: 300px; /* Altura fixa */
+  object-fit: cover; /* Cobre toda a área da imagem sem distorcer */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 3px solid #ffd700; /* Borda dourada de 3px */
+  cursor: pointer;
+  /* Sombra e background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar destaque */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Fundo semi-transparente para um leve efeito */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves ao passar o mouse */
+}
+
+/* Efeito de hover nas imagens */
+.contentFilms img:hover,
+.contentSeries img:hover,
+.contentDocumentarios img:hover {
+  transform: scale(1.1); /* Aumenta a imagem um pouco ao passar o mouse */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao passar o mouse */
+  border: 3px solid #6f00ff;
+}
+
+/* Estilizando o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffd700;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-content h2 {
+  margin: 10px 0;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-content a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}

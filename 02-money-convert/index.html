@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Convert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header> <!-- Meu header com bg azul-->
+            <h1>Money Convert</h1>
+        </header>
+        <main>
+
+
+
+            <!-- Select para converter de-->
+            <label> 
+                Converter <b>de</b>
+                <select>
+                    <option><b>R$</b> - Real Brasileiro</option>
+                </select>
+            </label>
+
+
+
+            <!-- Select para converter Para-->
+            <label> 
+                Para
+                <select id="currencySelect">
+                    <option><b></b>US$</b> - Dólar Americano</option>
+                    <option><b></b>GBP</b> € - Euro</option>
+                    <option><b></b>BTC</b> ₿ - Bitcoin</option>
+                </select>
+            </label>
+
+            <!-- Input para converter o valor-->
+            <label> 
+                Valor
+                <input id="convertInput" placeholder="R$10.000,00">
+            </label>
+
+            <!-- Button para converter o valor-->
+             <button id="convertButton" type="button">Converter</button>
+
+
+        <!--Section/div conversão -->
+
+        <section>
+
+            <!--Resultado da conversão-->
+            <div class="sectionContainer">
+                <img src="./assets/brazil.png" alt="Bandeira brazil">
+                <p class="currency-name">Real Brasileiro</p>
+                <p class="currency-value" id="real-value-text">R$5.74</p>
+             </div>
+           
+           
+             <!--Arrow para converter-->
+            <img src="./assets/Arrow.png" alt="Seta" class="arrow-img">
+
+            <!--DIV do resultado da conversão para moeda selecionada-->
+            <div class="sectionContainer">
+                <img src="./assets/EUA.png" alt="Bandeira EUA" id="currency-Flag">
+                <p class="currency-name" id="currency-name">Dólar Americano <p>
+                <p class="currency-value" id="currency-value-text">US$ 1</p>
+             </div>
+
+
+
+        </section>
+        </main>
+
+
+    </div>
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
